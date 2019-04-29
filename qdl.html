@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>QDL: A Case Study</title>
+
+	<meta name="description" content="QDL: A Case Study">
+	<meta name="author" content="Kevin Cunningham">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+
+		<div class="slides">
+			<section>
+				<h1>QDL : A Case Study</h1>
+				<h5><img style="filter: invert(100%); max-height: 80px;" src="https://res.cloudinary.com/kc-cloud/image/upload/v1556044104/cogapp_bfimqt.jpg" /></h5>
+				<p>
+					<small>Kevin Cunningham</small><br/>
+					<small>24th April, 2019</small>
+				</p>
+			</section>
+			<section id="qdl-background">
+				<section data-background-image="https://res.cloudinary.com/kc-cloud/image/upload/v1556044121/qatari-scholar_qkvsti.jpg"
+						 data-background-size="contain">
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/kc-cloud/image/upload/v1556044138/shelves_hqvimf.jpg"
+						 data-background-size="contain">
+				</section>
+
+				<section data-background="./images/map-zoom.gif">
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/kc-cloud/image/upload/v1556044105/first-mention_wtjv0u.jpg"
+						 data-background-size="contain">
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/kc-cloud/image/upload/v1556044109/first-map_blr0vy.png"
+						 data-background-size="contain">
+				</section>
+		    </section>
+		    <section id="">
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044104/cogapp_bfimqt.jpg" 
+		    			 data-background-size="50%">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044123/QNL_Logo_swbxov.jpg" 
+		    			 data-background-size="50%">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044119/map1_yz4ha3.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	  	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044117/map2_zozcrz.png" 
+		    			 data-background-size="contain">
+		    	</section>		    	  	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044112/manu1_uysbwz.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044112/manu2_mbalvq.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044129/photo1_ky217k.png" 
+		    			 data-background-size="contain">
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044135/photo2_ub7itz.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    </section>
+
+		    <section>
+		    	<section data-background="./images/Homepage QNL.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044105/front_page_current_ogkbcf.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044112/front-side-by-side_r78vff.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044107/explore-archive-side-by-side_y1caxr.png" 
+		    			 data-background-size="contain">
+		    	</section>
+		    </section>
+
+		    <section>
+		    	<section>
+		    		<p>How do we decide what to develop?
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044103/audience_mifv3a.png" 
+		    			 data-background-size="contain">
+		    			 <p style="color:black;">Surveys</p>
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044102/audience-goals_rhovpi.png" 
+		    			 data-background-size="contain">
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044104/audience-suggestions_pet8sf.png" 
+		    			 data-background-size="contain">
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044185/workshop1_txdfdc.jpg" 
+		    			 data-background-size="contain">
+		    			 <h1>Workshops</h1>
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044186/workshop2_ru1qhu.jpg" 
+		    			 data-background-size="contain">
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044108/heatmap2_kbduoo.png" 
+		    			 data-background-size="contain">
+		    			 <h1>Heatmaps</h1>
+		    	</section>		    	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044109/heatmap1_wjas56.png" 
+		    			 data-background-size="contain">
+		    	</section>		    	
+		    </section>
+
+		    <section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044107/explore-archive-side-by-side_y1caxr.png" 
+		    			 data-background-size="contain">
+		    		<h1 style="color:#d74118;">Search</h1>
+		    	</section>
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044109/heatmap1_wjas56.png" 
+		    			 data-background-size="contain">
+		    			 <h1>Filters</h1>
+		    	</section>	
+		    	<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044178/timeline_qbu4di.gif"
+		    	data-background-size="contain">
+		    	</section>
+				<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044116/ocr_qklq1q.jpg"
+			    	data-background-size="contain">
+			   	</section>
+				<section data-background="./images/highlight.gif"
+			    	data-background-size="contain">
+			   	</section>
+				<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044194/transcription_udhd9v.gif"
+			    	data-background-size="contain">
+			   	</section>
+				<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044119/ocr-both-sides_q5aatl.gif"
+			    	data-background-size="contain">
+			   	</section>		
+				<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044106/grouping_ougrf2.png"
+			    	data-background-size="contain">
+			   	</section>				
+			   	<section data-background="./images/search-within.gif"
+			    	data-background-size="contain">
+			   	</section>
+		    </section>
+		  	<section>
+		  		<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044104/articles-from-our-experts_ny3bzw.png"
+		  		data-background-size="contain">
+		  		</section>		  		
+		  		<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044105/articles-what_bjm685.png"
+		  		data-background-size="contain">
+		  		</section>		  		
+		  		<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044103/articles-when_uvexlj.png"
+		  		data-background-size="contain">
+		  		</section>		  		
+		  		<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044105/articles-where_p4wmje.png"
+		  		data-background-size="contain">
+		  		</section>
+		  		<section data-background="./images/article-example.gif"
+		  		data-background-size="contain">
+		  		</section>
+		  		<section data-background="https://res.cloudinary.com/kc-cloud/image/upload/v1556044104/article-side-by-side_yjmjll.png"
+		  		data-background-size="contain">
+		  		</section>
+		  	</section>
+		  	<section>
+		  		<h1>What's next?</h1>
+		  	</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+	</script>
+
+</body>
+</html>
+ 
